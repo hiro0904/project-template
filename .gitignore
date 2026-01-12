@@ -1,0 +1,13 @@
+# 環境変数（機密情報）
+.env
+.env.local
+.env.*.local
+
+# プロジェクトに応じて適宜追加
+# 例:
+# node_modules/
+# __pycache__/
+# *.pyc
+# .venv/
+# dist/
+# build/
