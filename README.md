@@ -190,34 +190,32 @@ project-name/
 ├── README.md           # 本ファイル（プロジェクト概要）
 ├── CLAUDE.md           # Claude Code設定
 ├── DEVELOPMENT_LOG.md  # 開発ログインデックス
-├── .claude/            # Claude Code権限設定・スキル
+├── .claude/            # Claude Code権限設定・コマンド
 │   ├── settings.local.json
-│   └── skills/         # カスタムスキル
-│       ├── prep/       # 開発準備
-│       ├── wrap-up/    # 作業完了一括処理
-│       ├── review/     # コードレビュー
-│       ├── create-devlog/  # 作業ログ作成
-│       ├── create-issue/   # Issue作成
-│       └── update-docs/    # ドキュメント更新
+│   └── commands/       # スラッシュコマンド
+│       ├── understand.md     # プロジェクト理解（/understand）
+│       ├── wrapup.md         # 作業完了一括処理（/wrapup）
+│       ├── review.md         # コードレビュー（/review）
+│       ├── create-devlog.md  # 作業ログ作成（/create-devlog）
+│       ├── create-issue.md   # Issue作成（/create-issue）
+│       └── update-docs.md    # ドキュメント更新（/update-docs）
 ├── docs/               # 設計書・仕様書
 │   ├── claude-code-guidelines.md  # Claude Code補助ガイドライン
 │   └── archive/        # アーカイブ（完了・廃止ドキュメント）
 ├── issues/             # Issue管理
 ├── reviews/            # レビュー記録
 ├── dev-logs/           # 開発ログ
-├── api-docs/           # APIドキュメント（使用する場合）
 ├── db/                 # データベース関連（使用する場合）
-├── report/             # レポート出力
-└── project/            # 大規模タスク管理（必要に応じて）
+└── tools/              # プログラムツール（仮想環境管理）
 ```
 
 ## 開発を始める
 
 1. `CLAUDE.md` を読んで開発フローを確認
 2. `issues/backlog.md` からタスクを選択
-3. `/prep` スキルでプロジェクト理解を深める
+3. `/understand` コマンドでプロジェクト理解を深める
 4. 開発フローに従って作業
-5. `/wrap-up` スキルで作業完了処理
+5. `/wrapup` コマンドで作業完了処理
 
 ## 重要ファイル位置
 

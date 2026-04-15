@@ -35,7 +35,7 @@ issues/
 8. Claude Codeにレビュー依頼 → レビュー記録作成（reviews/）
      ↓
 9. レビュー指摘対応（全指摘を解決してからコミット）
-   - その場で修正 / backlog追記 / 人間が棄却判断
+   - その場で修正 / ユーザー判断で棄却
      ↓
 10. コミット（Closes #番号）→ push（Issueは自動クローズ）
 ```
@@ -51,10 +51,6 @@ issues/
 1. backlog.md から該当タスクを削除
 2. closed-issues.md のテーブルにIssue情報を追加
 3. backlog.md に「実装完了」等のメモを残さないこと
-
-### backlog追記ルール
-- レビュー指摘等でbacklogに追記する場合は、適切なカテゴリに配置する
-- レビュー記録へのリンクを付ける（例: `[#1レビュー](../reviews/issue1-review.md)指摘`）
 
 ## Git運用（シンプル版）
 

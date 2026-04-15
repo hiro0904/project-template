@@ -1,12 +1,4 @@
----
-name: create-issue
-description: GitHub Issueとローカルissueファイルを作成する
-argument-hint: <タイトル>
-disable-model-invocation: true
----
-
-# Issue作成
-
+GitHub Issueとローカルissueファイルを作成します。
 引数 `$ARGUMENTS` にIssueタイトルを指定。
 
 ## 手順
@@ -18,10 +10,7 @@ disable-model-invocation: true
 5. **backlog.md 更新**: 該当タスクがあれば削除
 6. **完了報告**: Issue番号・URL・作成ファイルを報告
 
-## 参照ドキュメント
-
-- `issues/README.md` — Issue運用ルール・コミットメッセージ規約
-- `docs/claude-code-guidelines.md` — 開発フロー全体像
+参照: `issues/README.md`
 
 ## 注意
 
