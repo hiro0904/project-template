@@ -84,6 +84,7 @@
 | ドキュメント | `docs/README.md` |
 | DB作業 | `db/schema.sql`, `db/README.md` |
 | ツール | `tools/README.md` |
+| プレゼン資料 | `presentations/README.md`, `docs/presentation-system.md` |
 
 **重要な注意点**:
 - **実装開始前**: 必ずユーザーと方向性を確認し、明示的な許可を得る
@@ -168,9 +169,23 @@ gitコミット前に：
 - `/docs/README.md` - ドキュメント管理
 - `/db/README.md` - データベース関連（使用する場合）
 - `/tools/README.md` - ツール管理
+- `/presentations/README.md` - プレゼン資料管理
 
 ---
 
 ## よく使う指示への対応
 
 詳細は `docs/claude-code-guidelines.md` を参照。
+
+### プレゼン資料関連
+
+詳細なワークフローは `presentations/README.md` を参照。
+
+| ユーザーの指示 | やること |
+|---------------|----------|
+| 「ヒアリングして」 | ユーザーの音声入力をそのまま `work/raw/hearing-XX.md` に記録。整形しない |
+| 「リサーチして」「調べて」 | 調査してraw/にresearch-XX.mdとして保存。またはプロンプト集を作成 |
+| 「骨格作って」 | raw/の内容をもとにdraft.mdに「伝えたいこと」+セクション構成を作成 |
+| 「原稿作って」 | 骨格に沿って本文を執筆。draft.mdの後半に追記 |
+| 「スライド作って」 | `/gen-slide` を実行。slide.md作成→確認→PPTX生成 |
+| 「発表資料を準備して」 | presentations/README.mdのフローに沿ってPhase 1から開始 |

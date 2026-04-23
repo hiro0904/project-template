@@ -7,6 +7,11 @@
 ```
 tools/
 ├── README.md          # 本ファイル（運用ルール）
+├── pptx/              # スライド自動生成ツール（pptxgenjs）
+│   ├── package.json
+│   ├── templates/     # スライドテンプレート
+│   ├── scripts/       # 発表ごとの生成スクリプト
+│   └── output/        # 生成ファイル出力先
 ├── tool-a/            # ツールごとにフォルダを分ける
 │   ├── .venv/         # ツール固有の仮想環境
 │   └── ...
@@ -14,6 +19,14 @@ tools/
     ├── .venv/
     └── ...
 ```
+
+## pptx — スライド自動生成
+
+PowerPoint スライドを pptxgenjs で自動生成するツール。
+`/gen-slide` スキルと連携して、原稿からスライドを一括生成する。
+
+**セットアップ**: `cd tools/pptx && npm install`
+**詳細**: `docs/presentation-system.md` を参照
 
 ## 仮想環境の管理方針
 

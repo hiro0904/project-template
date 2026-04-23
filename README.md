@@ -198,15 +198,20 @@ project-name/
 │       ├── review.md         # コードレビュー（/review）
 │       ├── create-devlog.md  # 作業ログ作成（/create-devlog）
 │       ├── create-issue.md   # Issue作成（/create-issue）
-│       └── update-docs.md    # ドキュメント更新（/update-docs）
+│       ├── update-docs.md    # ドキュメント更新（/update-docs）
+│       └── gen-slide.md      # スライド生成（/gen-slide）
+├── presentations/      # プレゼン資料管理（ミーティング・発表）
+│   └── mtg-XXXX-テーマ名/  # 発表単位（draft.md / slide.md / work/raw/）
 ├── docs/               # 設計書・仕様書
 │   ├── claude-code-guidelines.md  # Claude Code補助ガイドライン
+│   ├── presentation-system.md     # プレゼン資料自動生成システム
 │   └── archive/        # アーカイブ（完了・廃止ドキュメント）
 ├── issues/             # Issue管理
 ├── reviews/            # レビュー記録
 ├── dev-logs/           # 開発ログ
 ├── db/                 # データベース関連（使用する場合）
 └── tools/              # プログラムツール（仮想環境管理）
+    └── pptx/           # スライド自動生成（pptxgenjs）
 ```
 
 ## 開発を始める
